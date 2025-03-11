@@ -4,28 +4,25 @@ The Hospital Appointment System is a full-stack web-based application that allow
 The back-end MUST be a C# .net api. The front end can be built using Blazor, React, Angular or VUE. 
 The back-end database MUST be a SQL relational database.
 The login / authentication mechanism MUST use Microsoft’s Identity Platform from .net 8 (or 9) OR a cloud based authentication using OAUTH / Microsoft Entrata or Microsoft B2C. Firebase is NOT accepted. 
-You are expected to use a event bus such as Rabbit MQ or Microsoft Service Bus for handing the distribution of messages (appointment notifications, reminders, cancelations etc).
-Your database should be populated with at least 1000 patients using a library such as Faker or Bogus.
-Appointments can be cancelled up to 48 hours before scheduled appointment.
 ## Functional Requirements:
 For more detailed functional requirements, you are expected to deliver on at least 80% of user stories which have been added to the appendix.
-2.1 User Roles & Authentication
+- 2.1 User Roles & Authentication
 - Patients: Can register, log in, book, view, and cancel appointments.
 - Doctors: Can log in, view their schedules, approve or reject appointments. Doctors can create prescriptions for the patients. 
 - Admins: Manage doctors, patients, and appointments.
-2.2 User Management
+- 2.2 User Management
 - Secure patient registration and profile management.
 - Admin-controlled doctor registration and schedule setup.
 - Role-based authentication using Microsoft Identity.
-2.3 Appointment Booking & Management
+- 2.3 Appointment Booking & Management
 - Patients can book, view, and cancel appointments.
 - Doctors can approve, reject, and complete appointments.
 - Admins can view and manage all appointments.
 - System prevents double booking and scheduling conflicts.
-2.4 Notifications & Reminders 
+- 2.4 Notifications & Reminders 
 - Email confirmation upon booking/cancellation 
 - Automated reminders before an appointment.
-2.5 Search & Filtering
+- 2.5 Search & Filtering
 - Patients can search for doctors by specialization or name.
 - Appointments can be filtered by date, doctor, or status.
 - ## Database Design & Security:
