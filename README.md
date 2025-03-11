@@ -25,6 +25,6 @@ For more detailed functional requirements, you are expected to deliver on at lea
   ## 2.5 Search & Filtering
 - Patients can search for doctors by specialization or name.
 - Appointments can be filtered by date, doctor, or status.
-- ## Database Design & Security:
+## Database Design & Security:
 The database should include tables for Users, Doctors, Appointments, and Notifications. Ensure proper relationships, foreign keys, and data integrity constraints.
 Security measures should include role-based access control, parameterized queries to prevent SQL injection (Use EF Core) , and password hashing for authentication (already handled).
